@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập Toán 7 - Lê Quang Nhựt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Giáo viên</p>
+      <h1>Lê Quang Nhựt</h1>
+    </div>
+    <div class="teacher-badge">Toán 7</div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="sidebar" aria-label="Danh mục bài tập">
+      <button class="course-item active" id="courseButton" type="button">
+        <span>Bài tập Toán 7</span>
+        <strong>5 chương</strong>
+      </button>
+
+      <nav class="chapter-list" id="chapterList" aria-label="Chọn chương"></nav>
+    </aside>
+
+    <section class="quiz-panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow" id="chapterMeta">Chương 1</p>
+          <h2 id="chapterTitle">Câu hỏi ôn tập</h2>
+        </div>
+        <a class="doc-link" id="docLink" href="#" target="_blank" rel="noreferrer">Mở đề gốc</a>
+      </div>
+
+      <div class="summary-grid" id="summaryGrid">
+        <div>
+          <span>Tổng câu</span>
+          <strong id="totalCount">0</strong>
+        </div>
+        <div>
+          <span>Đúng</span>
+          <strong id="correctCount">0</strong>
+        </div>
+        <div>
+          <span>Sai</span>
+          <strong id="wrongCount">0</strong>
+        </div>
+        <div>
+          <span>Điểm</span>
+          <strong id="scoreCount">0%</strong>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button class="primary-button" id="submitButton" type="button">Nộp bài</button>
+        <button class="ghost-button" id="resetButton" type="button">Làm lại</button>
+        <p id="resultText" aria-live="polite"></p>
+      </div>
+
+      <form class="question-list" id="quizForm"></form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
